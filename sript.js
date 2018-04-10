@@ -1,18 +1,34 @@
-var string = "lorem ipsum dolor cos tam cos tam"
+var array = [1,2,3,4,5,6]
 
 
-var lenghtOfString = string.length
 
 
-var firstSpace = string.indexOf(0," ")
-var secondSpace = string.indexOf(firstSpace + 1, " ")
 
-var newString = string.substring(firstSpace, secondSpace)
+function checkArray(arr, index){
 
-console.log(firstSpace)
-console.log(secondSpace)
 
-document.write(newString)
+
+    document.write("element: " + arr[index] + '<br>')
+
+
+
+
+
+
+    if((arr.length - 1) === index) {
+        return null
+    }
+
+
+    checkArray(arr,index + 1)
+
+
+}
+
+
+
+checkArray(array,0)
+document.write("<br>" + 'suma elementow to: ' + tableSum)
 
 
 
