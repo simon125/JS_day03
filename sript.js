@@ -28,7 +28,41 @@ function checkArray(arr, index){
 
 
 checkArray(array,0)
-document.write("<br>" + 'suma elementow to: ' + tableSum)
 
 
 
+var myCar = {
+
+    name: "Opel",
+    color: "white",
+    changeColor: function (color) {
+
+        this.color = color;
+
+
+    }
+
+
+}
+
+
+function changingColorAnotherWay(car,color){
+
+    car.colorInny = color;
+
+}
+
+
+
+console.log(myCar)
+
+console.log("aktualny kolor to: " + myCar.color)
+
+myCar.changeColor('red')
+
+
+console.log("kolor po przemalowaniu: " + myCar.color)
+
+changingColorAnotherWay(myCar,'green')
+
+console.log("kolor po przemalowaniu inny: " + myCar.colorInny)
