@@ -66,3 +66,56 @@ console.log("kolor po przemalowaniu: " + myCar.color)
 changingColorAnotherWay(myCar,'green')
 
 console.log("kolor po przemalowaniu inny: " + myCar.colorInny)
+
+
+
+
+/////////////////////////////////////////////////////////////////////////
+
+
+console.log("suma dwoch liczb: " + sumOfTwoNumbers(2,5))
+
+
+function sumOfTwoNumbers(a,b){
+
+return a + b
+
+
+}
+
+function myFunction() {
+    var person = prompt("Please enter your name", 'example name');
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+            "Hello " + person + "! How are you today?";
+    }
+}
+
+
+
+myFunction()
+
+
+
+
+
+var userName = sessionStorage.getItem('name')
+
+
+if (userName) {
+
+    alert('hello ' + userName)
+}
+else {
+
+    sessionStorage.setItem('name', prompt('type your name'))
+
+}
+
+
+
+
+
+
+
+
